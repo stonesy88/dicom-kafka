@@ -20,18 +20,15 @@ jobs:
       - name: 🟢 Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: '20.19.0'  # Required for LikeC4 1.30.0+
 
       - name: 📦 Install dependencies
         run: npm install
 
-      - name: 🧰 Install LikeC4 globally
-        run: npm install -g likec4
-
       - name: 🏗️ Build LikeC4 site
-        run: likec4 build
+        run: npx likec4 build
 
-      - name: 🚀 Deploy to gh-pages
+      - name: 🚀 Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
