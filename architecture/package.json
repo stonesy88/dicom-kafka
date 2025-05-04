@@ -6,7 +6,7 @@
   "scripts": {
     "start": "likec4 start",
     "dev": "likec4 serve",
-    "build": "likec4 build",
+    "build": "npx likec4 build", 
     "export:png": "likec4 export png -o ./png",
    "deploy": "gh-pages -d dist -g ../.git"
   },
