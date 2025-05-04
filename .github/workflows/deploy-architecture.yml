@@ -25,6 +25,12 @@ jobs:
       - name: 📦 Install dependencies
         run: npm install
 
+      - name: ✅ Verify dependencies
+        run: ls -al node_modules/.bin
+
+      - name: 🔧 Fix permissions for likec4
+        run: chmod +x node_modules/.bin/likec4
+
       - name: 🏗️ Build LikeC4 site
         run: npx likec4 build
 
