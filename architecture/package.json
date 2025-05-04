@@ -1,0 +1,17 @@
+{
+  "name": "likec4-starter",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "likec4 start",
+    "dev": "likec4 serve",
+    "build": "likec4 build",
+    "export:png": "likec4 export png -o ./png",
+   "deploy": "gh-pages -d dist -g ../.git"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "likec4": "*"
+  }
+}

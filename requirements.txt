@@ -1,0 +1,5 @@
+pydicom
+confluent-kafka
+watchdog
+numpy
+torch           # onnxruntime if using ONNX
